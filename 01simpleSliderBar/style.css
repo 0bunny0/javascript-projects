@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+}
+/* 左侧样式 */
+.sliderbar-left {
+    height: 200px;
+    width: 200px;
+    background: green;
+    position: absolute;
+    top: 300px;
+    left: -200px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+}
+
+.sliderbar-left span {
+    width: 20px;
+    height: 60px;
+    line-height: 30px;
+    background: red;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+
+    position: absolute;
+    top: 65px;
+    left: 200px;
+    z-index: 10px;
+    cursor: pointer;
+}
+
+/* 右侧样式 */
+.sliderbar-right {
+    width: 150px;
+    height: 200px;
+    background: skyblue;
+    top: 300px;
+    right: -150px;
+    position: fixed;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+}
+
+.sliderbar-right span {
+    display: block;
+    width: 20px;
+    height: 60px;
+    line-height: 20px;
+    top: 70px;
+    right: 150px;
+    background: yellow;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    padding: 10px 5px 10px 10px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+}
+
+/* 上方样式 */
+.sliderbar-top {
+    width: 200px;
+    height: 150px;
+    background: skyblue;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 5px 0px 15px -2px rgba(0, 0, 0, .5);
+}
+
+.sliderbar-top span {
+    display: block;
+    height: 20px;
+    width: 60px;
+    line-height: 20px;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: pink;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .5);
+}
+
+/* 下方样式 */
+.sliderbar-bottom {
+    width: 200px;
+    height: 150px;
+    background: greenyellow;
+    bottom: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 5px 0 15px -5px rgba(0, 0, 0, .5);
+}
+
+.sliderbar-bottom span {
+    display: block;
+    height: 20px;
+    width: 60px;
+    line-height: 20px;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: orange;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 5px 0 15px -5px rgba(0, 0, 0, .5);
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    
+    font-size: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+    background: -webkit-linear-gradient(top, #fff, #d5dbe1);
+    background: -moz-linear-gradient(top, #fff, #d5dbe1);
+    background: -ms-linear-gradient(top, #fff, #d5dbe1);
+    background: -o-linear-gradient(top, #fff, #d5dbe1);
+   
+    -webkit-transition: all .13s ease-out;
+    -moz-transition: all .13s ease-out;
+    -o-transition: all .13s ease-out;
+    transition: all .13s ease-out;
+}
+button:hover{
+    color: red;
+}
+
+
+.box{
+    position: absolute;
+    background: #fff;
+    line-height: 300px;
+    text-align: center;
+    font-size: 28px;
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    box-shadow: 5px 0 15px -5px rgba(0, 0, 0, .5);
+}

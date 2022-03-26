@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>sliderBar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="anime.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        常见的不同位置的侧边栏效果实现
+    </div>
+    <!-- 左侧弹出盒 -->
+    <div class="sliderbar-left">
+        <span>左侧</span>
+    </div>
+
+    <!-- 右侧弹出盒 -->
+    <div class="sliderbar-right">
+        <span>分享到</span>
+    </div>
+
+    <!-- 上方弹出盒 -->
+    <div class="sliderbar-top">
+        <span>分享到</span>
+    </div>
+
+    <!-- 下方弹出盒 -->
+    <div class="sliderbar-bottom">
+        <span>分享到</span>
+        <button>×</button>
+    </div>
+
+
+    <script>
+        //左侧
+        var leftdiv = document.querySelector('.sliderbar-left');
+        leftdiv.onmouseover = function () {
+            leftanimate(leftdiv, 0);
+        }
+        leftdiv.onmouseout = function () {
+            leftanimate(leftdiv, -200);
+        }
+
+
+
+        // 右侧
+        var oDiv = document.querySelector('.sliderbar-right');
+        oDiv.style.right = '-150px'; //给右侧一个固定值
+
+
+        oDiv.onmouseover = function () {
+            rightanime(oDiv, 0);
+        }
+        oDiv.onmouseout = function () {
+            rightanime(oDiv, -150);
+        }
+
+        //上方
+        var topdiv = document.querySelector('.sliderbar-top');
+        topdiv.onmouseover = function () {
+            topanimate(topdiv, 0);
+        }
+        topdiv.onmouseout = function () {
+            topanimate(topdiv, -150);
+        }
+
+        // 下方
+        var btoDiv = document.querySelector('.sliderbar-bottom');
+        var btn = document.querySelector('button');
+        btoDiv.style.bottom = '-150px'; //给下方一个固定值
+
+
+        btoDiv.onmouseover = function () {
+            bottomanime(btoDiv, 0);
+        }
+        btn.onclick = function () {
+            bottomanime(btoDiv, -150);
+        }
+    </script>
+</body>
+
+</html>
